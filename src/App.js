@@ -21,7 +21,7 @@ export const GoogleAuthProvider = ({ children }) => {
 const App = () => {
   return (
     <GoogleAuthProvider>
-      <RouterProvider router={router} />;
+      <RouterProvider router={router} />
     </GoogleAuthProvider>
   );
 };
