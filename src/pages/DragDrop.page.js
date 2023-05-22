@@ -1,4 +1,4 @@
-import { Box, Grid, Typography } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import { useEffect, useState } from "react";
 import { DragDropContext, Droppable } from "react-beautiful-dnd";
 import { useFetchCompaniesQuery } from "../Api";
@@ -40,7 +40,6 @@ const DragDropPage = () => {
   };
 
   const onDragEnd = (result) => {
-    console.log(result);
     if (!result.destination) {
       return;
     }
